@@ -1,0 +1,1 @@
+module.exports = uri = "mongodb+srv://imran-mind:imran-mind@cluster0.htu7h.mongodb.net/?retryWrites=true&w=majority"
