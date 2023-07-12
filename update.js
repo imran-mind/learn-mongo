@@ -1,4 +1,4 @@
-const {MongoClient} = require('mongodb');
+const {MongoClient,ObjectId} = require('mongodb');
 const uri = require('./atlas-uri');
 console.log(uri);
 
@@ -15,22 +15,13 @@ const connectToDB = async () =>{
     }
 }
 
-const blog = [
-    {
-        title: 'title test 1',
-        description: 'some text 1',
-        date: new Date()
-    },
-    {
-        title: 'title test 2',
-        description: 'some text 2',
-        date: new Date()
-    }
-]
+const docToUpdate = { title: 'title test 1'}
+const update = {$push:{tags: 'travel'}};
+
 const main = async ()=>{
     try{
         await connectToDB();
-        let result = await postsCollection.insertMany(blog);
+        let result = await postsCollection.updateMany(docToUpdate, update);
         console.log('Document Inserted ',result);
     }catch(err){
         console.error(`Error connecting to the database ${err}`);
