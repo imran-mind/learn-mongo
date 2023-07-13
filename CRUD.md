@@ -1026,8 +1026,7 @@ db.zips.find({ city: { $in:["PHOENIX""CHICAGO"]}})
 
     ```js
     db.collection.dropIndexes([
-    'index1name', 'index2name', 'index3name'
+    'index1name', 'index2name', 'index3name', 'index4name'
     ])
     ```
 
-    
