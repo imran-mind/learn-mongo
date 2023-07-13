@@ -21,24 +21,6 @@ const sampleAccounts = [
     account_type: "savings",
     balance: 4000,
 },
-{
-    account_id: "MDB829000001",
-    account_holder: "Muhammad ibn Musa al-Khwarizmi",
-    account_type: "savings",
-    balance: 4000,
-},
-{
-    account_id: "MDB829000001",
-    account_holder: "Muhammad ibn Musa al-Khwarizmi",
-    account_type: "savings",
-    balance: 4000,
-},
-{
-    account_id: "MDB829000001",
-    account_holder: "Muhammad ibn Musa al-Khwarizmi",
-    account_type: "savings",
-    balance: 4000,
-},
 ]
 
 const connectToDatabase = async () =>{
