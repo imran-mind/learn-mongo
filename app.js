@@ -39,5 +39,4 @@ const main = async ()=>{
     }
 }
 
-console.log('Demo Logs');
 main();
